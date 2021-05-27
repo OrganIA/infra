@@ -5,7 +5,8 @@ log {
 }
 
 root * /srv/www/front
-try_files {path} /index.html
-file_server
-
-reverse_proxy /api/* localhost:10080
+route {
+	reverse_proxy /api/* localhost:10080
+	try_files {path} {path}/ /index.html
+	file_server
+}
