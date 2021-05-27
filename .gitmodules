@@ -1,0 +1,8 @@
+[submodule "server"]
+	path = server
+	url = git@github.com:OrganIA/organia-server
+	shallow = true
+[submodule "frontend"]
+	path = frontend
+	url = git@github.com:OrganIA/organia-frontend
+	shallow = true
