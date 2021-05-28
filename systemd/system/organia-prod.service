@@ -1,0 +1,9 @@
+[Unit]
+Description=OrganIA [PROD]
+
+[Service]
+Environment=ENV=prod
+Environment=PORT=80
+ExecStart=/opt/organia-infra-prod/scripts/update.sh
+WorkingDirectory=/opt/organia-infra-prod
+Restart=on-failure
