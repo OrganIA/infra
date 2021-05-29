@@ -4,6 +4,8 @@ compose() {
 	podman-compose "$@" || docker-compose "$@"
 }
 
-compose down -t 1
 ./scripts/get_organia_repos.sh
-compose up --build
+compose build
+compose down -t 1
+compose up -d
+compose logs -f

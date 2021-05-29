@@ -3,6 +3,8 @@
 [ -f ./.env ] && source ./.env
 
 set -e
+set -u
+set -o pipefail
 
 export GIT_SSH_COMMAND="ssh -i $SSH_KEY -o IdentitiesOnly=yes -o StrictHostKeyChecking=no"
 orga="${3:-$ORGA}"
