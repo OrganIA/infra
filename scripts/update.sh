@@ -8,4 +8,7 @@ compose() {
 compose build
 compose down -t 1
 compose up -d
+if [ "$ENV" != 'prod' ]; then
+	compose run --rm -p 9000:10080 -d backend
+fi
 compose logs -f
