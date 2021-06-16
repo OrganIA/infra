@@ -18,6 +18,7 @@ services:
       DISCORD_LOGS:
       LOG_SQL: "false"
       NO_RELOAD: "true"
+      FORCE_LOGIN:
 
   frontend:
     build:
