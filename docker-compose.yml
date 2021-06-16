@@ -16,7 +16,8 @@ services:
     environment:
       PORT: 10080
       DISCORD_LOGS:
-      LOG_SQL: "no"
+      LOG_SQL: "false"
+      NO_RELOAD: "true"
 
   frontend:
     build:
