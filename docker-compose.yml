@@ -17,6 +17,7 @@ services:
       PORT: 10080
       DISCORD_LOGS:
       LOG_SQL: "no"
+      FORCE_LOGIN:
 
   frontend:
     build:
